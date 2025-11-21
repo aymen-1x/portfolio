@@ -1,9 +1,8 @@
-// ...existing code...
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TypeAnimation } from 'react-type-animation';
-import linkedinImg from '../assetss/img-linkdin.png'; // Vérifie le chemin exact
 import { Link } from "react-router-dom";
+import linkedinImg from '../assetss/img-linkdin.png'; // Vérifie le chemin exact
 
 const Accueil = () => {
   return (
@@ -43,13 +42,8 @@ const Accueil = () => {
             </div>
 
             <div className="d-flex gap-3">
-              <Link to="/projets" className="btn-accent">
-                Voir mes projets
-              </Link>
-             
-              <Link to="/contact" className="btn btn-outline-primary" aria-label="Contacter">
-               Contact
-              </Link>
+              <a href="#projets" className="btn-accent">Voir mes projets</a>
+              <Link to="/contact" className="btn btn-outline-primary" aria-label="Contacter">Contact</Link>
             </div>
           </div>
 
@@ -74,6 +68,5 @@ const Accueil = () => {
 };
 
 export default Accueil;
-// ...existing code...
 
 
